@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <title>User Registration</title>
+
+</head>
+<body>
+    <div class="header"
+     style="display: flex;justify-content: center;background-color: #494e4efa;
+     width: 100%;align-items: center;padding-top: 20px;font-family: cursive;">
+        <div>
+            <img src="../resourses/user.png" alt="Logo" height="50px" width="50px" >
+        </div>
+        <div>
+            <h1>E-MART</h1>
+        </div>
+    </div>
+    <div class="flexbox"
+    style="display: flex;flex-direction: column;justify-content: center;
+    width: 70%;background-color: #dadddd;margin:1% auto;">
+    <form action="" method="POST">
+            <fieldset>
+                <legend>Personal information:</legend>
+                <em id="warning" >Fields with <sup>*</sup> are compulsory.</em>
+                <div>
+                <table  class="formt" style="font-family: 'Times New Roman', Times, serif;
+                 width: 100%;text-align: center;" >
+                    <col width="50%">
+                    <tr>
+                        <td><b>First Name</b><sup>*</sup></td>
+                        <td><input type="text" name="fname" placeholder="Your first name.." 
+                            style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                            border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr style="background-color: #faf9fd;">
+                            <td><b>Middle Name</b></td>
+                            <td><input type="text" name="mname" placeholder="Your middle name.." 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                            <td><b>Last Name</b><sup>*</sup></td>
+                            <td><input type="text" name="lname" placeholder="Your last name.." 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+
+                    <tr style="background-color: #faf9fd;">
+                        <td><b>Email</b><sup>*</sup></td>
+                        <td><input type="email" name="smail" placeholder="xyz@abc.com" 
+                            style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                            border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                            <td><b>Phone No.</b><sup>*</sup></td>
+                            <td><input type="text" name="phno" placeholder="12345....." 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr style="background-color: #faf9fd;">
+                            <td><b>Password</b><sup>*</sup></td>
+                            <td><input type="password" name="pass" placeholder="Password" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                            <td><b>Re-enter Password</b><sup>*</sup></td>
+                            <td><input type="password" name="repass" placeholder="re-enter password" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr style="background-color: #faf9fd;">
+                            <td><b>Date Of Birth</b><sup>*</sup></td>
+                            <td><input type="date" name="dob" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;
+                                display: inline;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                            <td><b>Gender</b><sup>*</sup></td>
+                            <td><div>
+                            <input type="radio" name="gender" value="male" 
+                            style="width:5%;;padding: 10px 10px;margin: 1% ;display: inline;
+                            border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" checked>Male<br>
+                            <input type="radio" name="gender" value="female" 
+                            style="width: 5%;padding: 10px 10px;margin: 1% ;display: inline;
+                            border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"> Female<br>
+                            <input type="radio" name="gender" value="other" 
+                            style="width:5%;padding: 10px 10px;margin: 1% ;display: inline;
+                            border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"> Other<br>
+                           </div>
+                            </td>
+                    </tr>
+                    <tr style="background-color: #faf9fd;">
+                            <td><b>Current Address</b></td>
+                            <td>
+                                <input type="text" name="cadd" placeholder="address..." 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                <input type="text" name="ccity" placeholder="city" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                <input type="text" name="cstate"placeholder="state"
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                    <select  name="country" style="width: 100%;padding: 10px 10px;
+                                    margin: 1% ;display: inline;border: 1px solid #ccc;border-radius: 4px;
+                                    box-sizing: border-box;">
+                                        <option value="India">India</option>
+                                        <option value="Pak">Pakistan</option>
+                                        <option value="usa">USA</option>
+                                    </select><br>
+                                
+                                <input type="text" name="czip" placeholder="Zip-Code" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                            <td><b>Permanent Address</b><sup>*</sup></td>
+                            <td>
+                                <input type="text" name="padd" placeholder="address..." 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                <input type="text" name="pcity" placeholder="city" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                <input type="text" name="pstate" placeholder="state" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                                    <select  name="pcountry" style="width: 100%;padding: 10px 10px;
+                                    margin: 1% ;display: inline;border: 1px solid #ccc;border-radius: 4px;
+                                    box-sizing: border-box;">
+                                        <option value="India">India</option>
+                                        <option value="Pak">Pakistan</option>
+                                        <option value="usa">USA</option>
+                                    </select><br>
+                                
+                                <input type="text" name="pzip" placeholder="Zip-code" 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></td>
+                    </tr>
+                    <tr style="background-color: #faf9fd;">
+                            <td><b>Personal Interests</b></td>
+                            <td><textarea name="interests" 
+                                placeholder="like sports, books, computer & software, fashion, photography etc... " 
+                                style="width: 100%;padding: 10px 10px;margin: 1% ;display: inline;
+                                border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"></textarea></td>
+                    </tr>
+                </table>
+                
+                
+            </div>
+            
+            <input type="submit" value="Submit" 
+            style="background-color: #4CAF50;font-size: 150%;color: #ffffff; padding: 16px 32px;
+             margin:2% 25%;cursor: pointer;width: 50%;">
+            </fieldset>
+</div>
+    </form>
+   
+    <div class="footer" style="padding: 20px;text-align: center;background: #dddddd;">
+            <div align="center">
+                    <img src="../resourses/user.png" alt="Logo" height="50px" width="50px" ><b>E-MART</b><br>
+                    <em>@all rights reserved</em>
+            </div>
+    </div>
+    
+</body>
